@@ -35,7 +35,6 @@ import {hashPassword} from "../helpers/authHelper.js";
     }
     //register user
     const  hashPassword1 = await hashPassword (password);
-    console.log(hashPassword1)
     //save
     const user = await new userModel({
       name,
